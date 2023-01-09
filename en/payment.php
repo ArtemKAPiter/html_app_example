@@ -39,7 +39,7 @@ class Payment {
         foreach($tmp as $key=>$value){
             $resstr = $resstr.$key."=".$value;
         }
-        $resstr = $resstr.self::APP_SECRET_KEY;
+        $resstr = $resstr.self::"3D97DC62892022593108A33B";
         return md5($resstr);
         
     }
